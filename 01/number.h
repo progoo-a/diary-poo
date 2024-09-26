@@ -27,7 +27,7 @@ struct Number {
         int value;
 };
 
-std::ostream& operator<<(std::ostream& os, Number& number) {
+std::ostream& operator<<(std::ostream& os, const Number& number) {
     os << number.getValue();
     return os;
 }
