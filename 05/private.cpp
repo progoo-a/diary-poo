@@ -3,9 +3,8 @@
 class Admin;
 
 class CheckPassword {
-    std::string password;
-
     public:
+    friend class Admin;
     bool check(std::string password) {
         return password == this->password;
     }
@@ -14,8 +13,7 @@ class CheckPassword {
     void change(std::string password) {
         this->password = password;
     }
-public:
-    friend class Admin;
+    std::string password;
 };
 
 class Admin {

@@ -22,7 +22,6 @@ Pour définir une méthode virtuelle, il suffit de la déclarer avec le mot-clé
 
 Le mot clé `override` est utilisé dans les classes dérivées pour indiquer que la méthode redéfinit une méthode virtuelle de la classe de base. En pratique, le mot clé `override` n'est pas obligatoire, mais il est recommandé pour éviter les erreurs, car si `override` est utilisé et que la méthode de base n'est pas `virtuelle` une erreur de compilation sera générée.
 
-
 ## Most Vexing Parse
 
 Le most vexing parse est une ambiguïté de syntaxe qui peut survenir lors de la déclaration d'un objet. Par exemple, la déclaration `Toto t();` est ambiguë. Elle peut être interprétée comme une déclaration d'une fonction `t` qui retourne un `Toto` ou comme une déclaration d'un objet `t` de type `Toto`. Pour résoudre cette ambiguïté, il suffit de retirer les parenthèses.

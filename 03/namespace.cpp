@@ -18,7 +18,9 @@ int add(int a, int b) {
 }
 
 int subtract(int a, int b) {
+    #ifdef DEBUG
     std::cerr << "DEBUG: subtract(" << a << ", " << b << ")" << std::endl;
+    #endif
     return a - b;
 }
 }

@@ -6,7 +6,7 @@ struct Person {
     std::string name;
     Person(const std::string& name, int age) {
         this->name = name;
-        this->age = age;
+        this->
     }
 
     int age;

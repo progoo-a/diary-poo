@@ -11,11 +11,10 @@ std::ostream& bold_red(std::ostream& os) {
     return os << "\033[1;31m";
 }
 
-std::ostream& operator<< (std::ostream& os, 
-                          std::function<std::ostream&(std::ostream&)> f) {
-    std::cout << "operator<< called" << std::endl;
-    return f(os);
-}
+// std::ostream& operator<< (std::ostream& os, 
+//                           std::function<std::ostream&(std::ostream&)> f) {
+//     return f(os);
+// }
 
 int main() {
     //std::stringstream ss;
