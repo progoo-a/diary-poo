@@ -40,22 +40,16 @@ public:
         }
     }
 
+    // DFS means Depth First Search
     auto dfs(std::function<void(Node*)> f) {
         std::stack<Node*> stack;
         stack.push(root);
-
         while (!stack.empty()) {
             Node* node = stack.top();
             stack.pop();
-
             f(node);
-
-            if (node->right) {
-                stack.push(node->right);
-            }
-            if (node->left) {
-                stack.push(node->left);
-            }
+            if (node->right) stack.push(node->right);
+            if (node->left) stack.push(node->left);
         }
     }
 };

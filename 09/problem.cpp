@@ -18,6 +18,6 @@ int main() {
     Base<int> c = b.addOne();
 
     BaseInt bi{42};
-    BaseInt di = bi.addOne();
+    BaseInt di = bi.addOne(); // Erreur
 }
 

@@ -1,33 +1,19 @@
 #include <iostream>
 #include <string>
 
-struct IFlyer {
-    virtual void fly() const = 0;
-};
+struct IFlyer { virtual void fly() const = 0; };
+struct ISwimmer { virtual void swim() const = 0; };
+struct IShooter { virtual void shoot() const = 0; };
 
-struct ISwimmer { virtual void swim() const = 0;
-};
-
-// Trait : Interface pour tirer
-struct IShooter {
-    virtual void shoot() const = 0; // Méthode purement virtuelle
-};
-
-// Classe de base pour les personnages
 struct Character {
-public:
     Character(const std::string& name) : name(name) {}
     virtual ~Character() = default;
-
     void introduce() const {
         std::cout << "Hi, I am " << name << "!" << std::endl;
     }
-
-private:
     std::string name;
 };
 
-// Un personnage qui peut voler et tirer
 struct FlyingShooter : public Character, public IFlyer, public IShooter {
 public:
     FlyingShooter(const std::string& name) : Character(name) {}

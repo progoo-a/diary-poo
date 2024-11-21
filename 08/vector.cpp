@@ -11,6 +11,12 @@ struct Vector {
     operator double () const {
         return length();
     }
+    // operator int () const {
+    //     return x;
+    // }
+    // operator long() const {
+    //     return y;
+    // }
 };
 
 int main() {
