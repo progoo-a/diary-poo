@@ -1,5 +1,32 @@
 # Semaine 16/16
 
+- [ ] Demo Boids
+- [ ] Questions révision
+- [ ] Rappel patterns utiles
+
+## Demo Boids
+
+### Alexis Lantier
+
+- Très bonne présentation
+- Démo fonctionnelle esthétique
+- Code propre
+- Bonne séparation des responsabilités
+
+## Aurore Delessert
+
+- Bonne présentation
+- Démo fonctionnelle esthétique, hyper véloce
+- Code propre avec pas mal de SSOT
+- Bien structuré et bonne séparation des responsabilités
+
+## Thomas Bachmann
+
+- Très bonne présentation
+- Démo fonctionnelle singuliaire sans réglage des règles
+- Code propre moins ouf que les autres
+- Bonne structure, utilisations de concepts et templates
+
 ## Design Pattern 
 
 - Singleton
