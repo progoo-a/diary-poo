@@ -36,7 +36,7 @@ public:
     }
 
     void visitBar(Bar* bar) override {
-        std::cout << "Visiting Bar (date = " << bar->data << ")" << std::endl;
+        std::cout << "Visiting Bar (data = " << bar->data << ")" << std::endl;
     }
 };
 

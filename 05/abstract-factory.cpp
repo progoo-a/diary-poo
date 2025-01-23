@@ -7,7 +7,7 @@ struct Circle
 
     Circle(std::string str) {}
 
-Circle Circle::fromString(std::string str) {
+    static Circle fromString(std::string str) {
     std::regex re("\\(\\s*(\\d+(?:\\.\\d+)?)\\s*,\\s*"
                   "(\\d+(?:\\.\\d+)?)\\s*,\\s*"
                   "(\\d+(?:\\.\\d+)?)\\s*\\)");
